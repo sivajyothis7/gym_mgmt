@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include enfono_gym *.css
+recursive-include enfono_gym *.csv
+recursive-include enfono_gym *.html
+recursive-include enfono_gym *.ico
+recursive-include enfono_gym *.js
+recursive-include enfono_gym *.json
+recursive-include enfono_gym *.md
+recursive-include enfono_gym *.png
+recursive-include enfono_gym *.py
+recursive-include enfono_gym *.svg
+recursive-include enfono_gym *.txt
+recursive-exclude enfono_gym *.pyc
