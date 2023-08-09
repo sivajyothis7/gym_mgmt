@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Class Booking-{####}",
+ "creation": "2023-08-09 09:49:55.039915",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_data",
+  "class_name",
+  "class_type",
+  "trainer",
+  "trainer_name",
+  "class_date",
+  "class_time",
+  "slot_capacity",
+  "available_slots",
+  "column_break_3",
+  "member",
+  "email",
+  "naming_series",
+  "status",
+  "full_name",
+  "is_published",
+  "send_email",
+  "route",
+  "section_break_erbr5"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_data",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Class",
+   "options": "Class Details",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "class_data.class_name",
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "label": "Class Name"
+  },
+  {
+   "fetch_from": "class_data.class_type",
+   "fieldname": "class_type",
+   "fieldtype": "Select",
+   "label": "Class Type",
+   "options": "Athletic Training\nBarre\nBoxing and Kickboxing\nCycling\nLong + Lean\nPilates\nStretch and Recovery\nYoga"
+  },
+  {
+   "fetch_from": "class_data.trainer_name",
+   "fieldname": "trainer",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Trainer"
+  },
+  {
+   "fetch_from": "class_data.trainer_name",
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "label": "Trainer Name"
+  },
+  {
+   "fetch_from": "class_data.class_date",
+   "fieldname": "class_date",
+   "fieldtype": "Date",
+   "label": "Class Date"
+  },
+  {
+   "fetch_from": "class_data.class_time",
+   "fieldname": "class_time",
+   "fieldtype": "Time",
+   "label": "Class Time",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "class_data.available_capacity",
+   "fieldname": "slot_capacity",
+   "fieldtype": "Int",
+   "label": "Slot Capacity"
+  },
+  {
+   "fieldname": "available_slots",
+   "fieldtype": "Int",
+   "label": "Available Slots"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Member",
+   "options": "Members",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "member.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "GYM-BOOK-.YYYY."
+  },
+  {
+   "default": "Confirmed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Confirmed\nCancelled\nWaitlisted"
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Published"
+  },
+  {
+   "default": "0",
+   "fieldname": "send_email",
+   "fieldtype": "Check",
+   "label": "Send Email"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "route"
+  },
+  {
+   "fieldname": "section_break_erbr5",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2023-08-09 10:03:00.906273",
+ "modified_by": "Administrator",
+ "module": "Enfono Gym",
+ "name": "Booking Class",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "bookings",
+ "search_fields": "class_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
