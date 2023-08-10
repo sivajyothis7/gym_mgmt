@@ -1,0 +1,36 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-08-09 16:48:48.822781",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-08-09 17:05:30.678407",
+ "modified_by": "Administrator",
+ "module": "Enfono Gym",
+ "name": "Booking Class",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    cd.class_type AS \"Class Type\",\n    bc.name AS \"Class\",\n    cd.class_name AS \"Class Name\",\n    bc.status AS \"Status\",\n    bc.full_name AS \"Members\"\nFROM `tabBooking Class` bc\nLEFT JOIN `tabClass Details` cd ON bc.class_data = cd.name\n",
+ "ref_doctype": "Booking Class",
+ "report_name": "Booking Class",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Gym Admin"
+  },
+  {
+   "role": "Gym Trainer"
+  },
+  {
+   "role": "Gym Member"
+  }
+ ]
+}

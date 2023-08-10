@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TS-{member_name}",
+ "creation": "2023-08-09 14:59:14.697944",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "professional_plan",
+  "column_break_bhfko",
+  "member_name",
+  "trainer",
+  "section_break_biwfy",
+  "start_date",
+  "days_left",
+  "day_fee",
+  "column_break_aj6my",
+  "end_date",
+  "plan_days",
+  "total_plan_days_fees",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Members"
+  },
+  {
+   "fieldname": "professional_plan",
+   "fieldtype": "Link",
+   "label": "Professional Plan",
+   "options": "Workout Plan"
+  },
+  {
+   "fetch_from": "professional_plan.trainer",
+   "fieldname": "trainer",
+   "fieldtype": "Data",
+   "label": "Trainer"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trainer Subsription Plan",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_biwfy",
+   "fieldtype": "Section Break",
+   "label": "Plan Structure"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "days_left",
+   "fieldtype": "Data",
+   "label": "Days Left"
+  },
+  {
+   "fieldname": "day_fee",
+   "fieldtype": "Data",
+   "label": "Day Fee"
+  },
+  {
+   "fieldname": "column_break_aj6my",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "plan_days",
+   "fieldtype": "Data",
+   "label": "Plan Days"
+  },
+  {
+   "fieldname": "total_plan_days_fees",
+   "fieldtype": "Data",
+   "label": "Total Plan Days Fees"
+  },
+  {
+   "fieldname": "column_break_bhfko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-09 15:25:21.753778",
+ "modified_by": "Administrator",
+ "module": "Enfono Gym",
+ "name": "Trainer Subsription Plan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:Class Booking-{####}",
+ "autoname": "format:Booking Class -{####}",
  "creation": "2023-08-09 09:49:55.039915",
  "default_view": "List",
  "doctype": "DocType",
@@ -16,7 +16,6 @@
   "class_date",
   "class_time",
   "slot_capacity",
-  "available_slots",
   "column_break_3",
   "member",
   "email",
@@ -24,7 +23,6 @@
   "status",
   "full_name",
   "is_published",
-  "send_email",
   "route",
   "section_break_erbr5"
  ],
@@ -80,13 +78,8 @@
   {
    "fetch_from": "class_data.available_capacity",
    "fieldname": "slot_capacity",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Slot Capacity"
-  },
-  {
-   "fieldname": "available_slots",
-   "fieldtype": "Int",
-   "label": "Available Slots"
   },
   {
    "fieldname": "column_break_3",
@@ -136,12 +129,6 @@
    "label": "Is Published"
   },
   {
-   "default": "0",
-   "fieldname": "send_email",
-   "fieldtype": "Check",
-   "label": "Send Email"
-  },
-  {
    "fieldname": "route",
    "fieldtype": "Data",
    "hidden": 1,
@@ -156,7 +143,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2023-08-09 10:03:00.906273",
+ "modified": "2023-08-09 14:08:05.994945",
  "modified_by": "Administrator",
  "module": "Enfono Gym",
  "name": "Booking Class",
