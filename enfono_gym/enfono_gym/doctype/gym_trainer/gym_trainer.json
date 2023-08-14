@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "format:Trainer-{first_name}-{####}",
- "creation": "2023-07-21 12:38:45.877182",
+ "creation": "2023-08-14 10:53:28.669108",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -41,8 +41,7 @@
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "First Name",
-   "unique": 1
+   "label": "First Name"
   },
   {
    "fieldname": "last_name",
@@ -139,7 +138,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-08-01 10:38:27.114683",
+ "modified": "2023-08-14 11:05:52.053643",
  "modified_by": "Administrator",
  "module": "Enfono Gym",
  "name": "Gym Trainer",

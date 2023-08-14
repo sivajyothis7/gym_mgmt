@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"nqIK1smnd1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\" style=\\\"\\\">Enfono Gym Management</span>\",\"col\":12}},{\"id\":\"7yTLxi5DvO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"odnMNBOVwX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>QUICK ACCESS</b></span>\",\"col\":12}},{\"id\":\"pnffg_WvYD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Members\",\"col\":3}},{\"id\":\"JFyYKhwKVC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Trainer\",\"col\":3}},{\"id\":\"RUhHLoeZCp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Membership\",\"col\":3}},{\"id\":\"kafL9gX9r6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"iX4a3QhNNR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Class Details\",\"col\":3}},{\"id\":\"nWLkkdmvR1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Class\",\"col\":3}},{\"id\":\"h5-oq6egSz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Workout Plan\",\"col\":3}},{\"id\":\"6VPemmAmBc\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"nCDvO4GUYv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trainer Subsription Plan\",\"col\":3}},{\"id\":\"SFk5PETY1K\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"HrThxsrH8r\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>REPORTS</b></span>\",\"col\":12}},{\"id\":\"GOC_crkmjD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Class Report\",\"col\":3}}]",
+ "content": "[{\"id\":\"nqIK1smnd1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\" style=\\\"\\\">Enfono Gym Management</span>\",\"col\":12}},{\"id\":\"7yTLxi5DvO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"8ldDLAw-bd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Dashboard\",\"col\":3}},{\"id\":\"BegJgpPzxn\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"odnMNBOVwX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>QUICK ACCESS</b></span>\",\"col\":12}},{\"id\":\"pnffg_WvYD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Members\",\"col\":3}},{\"id\":\"JFyYKhwKVC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Trainer\",\"col\":3}},{\"id\":\"RUhHLoeZCp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Membership\",\"col\":3}},{\"id\":\"kafL9gX9r6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"iX4a3QhNNR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Class Details\",\"col\":3}},{\"id\":\"nWLkkdmvR1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Class\",\"col\":3}},{\"id\":\"h5-oq6egSz\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Workout Plan\",\"col\":3}},{\"id\":\"6VPemmAmBc\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"nCDvO4GUYv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Trainer Subsription Plan\",\"col\":3}},{\"id\":\"2dktPM9HBU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance\",\"col\":3}},{\"id\":\"SFk5PETY1K\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"HrThxsrH8r\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>REPORTS</b></span>\",\"col\":12}},{\"id\":\"GOC_crkmjD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Class Report\",\"col\":3}}]",
  "creation": "2023-07-21 01:36:00.595534",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,7 +12,7 @@
  "is_hidden": 0,
  "label": "Enfono Gym",
  "links": [],
- "modified": "2023-08-09 17:10:04.853155",
+ "modified": "2023-08-14 11:04:03.113809",
  "modified_by": "Administrator",
  "module": "Enfono Gym",
  "name": "Enfono Gym",
@@ -41,8 +41,15 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Membership",
-   "link_to": "Membership",
+   "label": "Gym Dashboard",
+   "link_to": "Gym Dashboard",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Trainer",
+   "link_to": "Gym Trainer",
    "type": "DocType"
   },
   {
@@ -62,6 +69,13 @@
   {
    "color": "Grey",
    "doc_view": "List",
+   "label": "Attendance",
+   "link_to": "Attendance",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
    "label": "Workout Plan",
    "link_to": "Workout Plan",
    "type": "DocType"
@@ -69,8 +83,8 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "Gym Trainer",
-   "link_to": "Gym Trainer",
+   "label": "Membership",
+   "link_to": "Membership",
    "type": "DocType"
   },
   {

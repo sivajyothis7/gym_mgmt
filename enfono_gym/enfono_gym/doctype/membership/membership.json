@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:naming_series",
- "creation": "2023-08-01 10:13:24.240559",
+ "creation": "2023-08-14 10:53:32.417714",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -45,7 +45,7 @@
    "fetch_from": "member.email",
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "email"
   },
   {
    "fieldname": "plan",
@@ -147,7 +147,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-08-08 13:17:04.532113",
+ "modified": "2023-08-14 10:53:32.417714",
  "modified_by": "Administrator",
  "module": "Enfono Gym",
  "name": "Membership",

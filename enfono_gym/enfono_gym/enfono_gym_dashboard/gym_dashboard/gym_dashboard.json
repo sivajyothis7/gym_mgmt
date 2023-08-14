@@ -1,0 +1,38 @@
+{
+ "cards": [
+  {
+   "card": "Total Members"
+  },
+  {
+   "card": "Total Trainers"
+  },
+  {
+   "card": "Paid Members"
+  },
+  {
+   "card": "Subscription Members"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Members",
+   "width": "Half"
+  },
+  {
+   "chart": "Membership Count",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-08-10 13:46:29.216350",
+ "dashboard_name": "Gym Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-08-14 10:55:48.011982",
+ "modified_by": "Administrator",
+ "module": "Enfono Gym",
+ "name": "Gym Dashboard",
+ "owner": "Administrator"
+}
