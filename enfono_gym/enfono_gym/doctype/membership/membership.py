@@ -9,7 +9,7 @@ class Membership(Document):
 	def status(self):
 		return get_contract_status(self.start_date,self.end_date)
 	
-# @frappe_whitelist()
+@frappe.whitelist()
 def get_contract_status(start_date,end_date):
 	today= getdate()
 	start= getdate(start_date)
@@ -23,7 +23,7 @@ def get_contract_status(start_date,end_date):
 		return "Active"
 
 
-# @frappe_whitelist()
+@frappe.whitelist()
 def get_days_left_in_plan(start_date,end_date):
 	days_left=date_diff(end_date,start_date)
 	return days_left
