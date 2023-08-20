@@ -19,11 +19,7 @@ frappe.ui.form.on('Booking Locker', {
 	locker_fee:function(frm){
 		totalLockerFees(frm)
 		
-	}
-	     
-    // locker_fees: function(frm){
-    //     calcLockerFees(frm);
-    // }
+	},
 });
 function calcDays(frm){
 	if(frm.doc.from_date && frm.doc.to_date){
@@ -37,3 +33,4 @@ function totalLockerFees(frm){
 		frm.set_value('locker_fees', locker_fees);
 	}
 }
+
