@@ -7,7 +7,7 @@ frappe.ui.form.on('Booking Locker', {
 	},	
 	to_date: function (frm) {
 		calcDays(frm)
-			
+	
 		
     },
 	days: function(frm){
@@ -21,6 +21,7 @@ frappe.ui.form.on('Booking Locker', {
 		
 	},
 });
+
 function calcDays(frm){
 	if(frm.doc.from_date && frm.doc.to_date){
 		let days = frappe.datetime.get_diff(frm.doc.to_date, frm.doc.from_date);
