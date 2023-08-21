@@ -2,15 +2,12 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Booking Locker', {
-	refresh:function (frm){
-		lockerStatus(frm)
-	},
 	from_date: function (frm) {
         
 	},	
 	to_date: function (frm) {
 		calcDays(frm)
-
+	
 		
     },
 	days: function(frm){
@@ -22,9 +19,9 @@ frappe.ui.form.on('Booking Locker', {
 	locker_fee:function(frm){
 		totalLockerFees(frm)
 		
-	}
-	     
+	},
 });
+
 function calcDays(frm){
 	if(frm.doc.from_date && frm.doc.to_date){
 		let days = frappe.datetime.get_diff(frm.doc.to_date, frm.doc.from_date);
@@ -36,24 +33,5 @@ function totalLockerFees(frm){
 		let locker_fees = frm.doc.locker_fee * frm.doc.days;
 		frm.set_value('locker_fees', locker_fees);
 	}
-}
-function lockerStatus(frm) {
-    if (frm.doc.locker && frm.doc.locker.status === "Available") {
-        frm.set_query('locker', function() {
-            return {
-                filters: [
-                    ['Locker', 'name', '=', frm.doc.locker]
-                ]
-            };
-        });
-    } else {
-        frm.set_query('locker', function() {
-            return {
-                filters: [
-                    ['Locker', 'status', '=', 'Available']
-                ]
-            };
-        });
-    }
 }
 
