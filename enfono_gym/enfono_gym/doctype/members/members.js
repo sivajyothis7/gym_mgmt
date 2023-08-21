@@ -16,8 +16,7 @@ frappe.ui.form.on("Members", {
                 primary_action_label: 'Create',
                 primary_action: (values) => {
                     frappe.new_doc("Membership", { member: frm.doc.name, plan: values.plan })
-                    // console.log(values)
-                    // d.hide();
+                    
                 }
             })
 
@@ -25,27 +24,11 @@ frappe.ui.form.on("Members", {
         });
 
         frm.add_custom_button(__('Trainer Subscription Plan'), function () {
-            let d = new frappe.ui.Dialog({
-                title: 'Select Member',
-                fields: [
-                    {
-                        fieldtype: "Link",
-                        label: __("Select Member"),
-                        fieldname: "member",
-                        options: "Members",
-                        reqd: 1
-                    }
-                ],
-                size: 'small',
-                primary_action_label: 'Create',
-                primary_action: (values) => {
-                    frappe.new_doc("Trainer Subsription Plan", { member: values.member })
-                    // console.log(values)
-                    // d.hide();
-                }
-            })
+                    frappe.new_doc("Trainer Subsription Plan", { member:frm.doc.last_name })
+                   
+            
 
-            d.show();
+            
         });
     }
 });
