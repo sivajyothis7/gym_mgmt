@@ -1,0 +1,43 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"vKl3EuCBJe\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Personal Security</span>\",\"col\":12}},{\"id\":\"uwmtnCcStb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Locker\",\"col\":3}},{\"id\":\"uAcU1jJlJN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Locker\",\"col\":3}}]",
+ "creation": "2023-08-21 09:22:21.080426",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "hr",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Personal Security",
+ "links": [],
+ "modified": "2023-08-21 10:48:12.200188",
+ "modified_by": "Administrator",
+ "module": "Enfono Gym",
+ "name": "Personal Security",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Enfono Gym",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 26.0,
+ "shortcuts": [
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Locker",
+   "link_to": "Locker",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Booking Locker",
+   "link_to": "Booking Locker",
+   "type": "DocType"
+  }
+ ],
+ "title": "Personal Security"
+}

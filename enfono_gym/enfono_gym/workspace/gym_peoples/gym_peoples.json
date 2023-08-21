@@ -1,0 +1,43 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"yZMR0ZxAVX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Gym Members</span>\",\"col\":12}},{\"id\":\"MMAGv8gV2l\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Members\",\"col\":3}},{\"id\":\"cKkx_CV780\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Gym Trainer\",\"col\":3}}]",
+ "creation": "2023-08-21 09:15:40.206024",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Gym Peoples",
+ "links": [],
+ "modified": "2023-08-21 10:48:24.619622",
+ "modified_by": "Administrator",
+ "module": "Enfono Gym",
+ "name": "Gym Peoples",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Enfono Gym",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Gym Trainer",
+   "link_to": "Gym Trainer",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Members",
+   "link_to": "Members",
+   "type": "DocType"
+  }
+ ],
+ "title": "Gym Peoples"
+}

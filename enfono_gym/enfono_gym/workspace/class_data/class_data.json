@@ -1,0 +1,43 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"9hvK8Pj6B1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Class Data</span>\",\"col\":12}},{\"id\":\"FDAImW49mv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Class Details\",\"col\":3}},{\"id\":\"k0BmMozdUl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"I8NHlxKE0M\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking Class\",\"col\":3}}]",
+ "creation": "2023-08-21 09:20:11.847250",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "message",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Class Data",
+ "links": [],
+ "modified": "2023-08-21 10:48:41.703024",
+ "modified_by": "Administrator",
+ "module": "Enfono Gym",
+ "name": "Class Data",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Enfono Gym",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 25.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Class Details",
+   "link_to": "Class Details",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Booking Class",
+   "link_to": "Booking Class",
+   "type": "DocType"
+  }
+ ],
+ "title": "Class Data"
+}
