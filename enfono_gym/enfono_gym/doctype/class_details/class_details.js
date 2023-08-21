@@ -9,11 +9,11 @@ frappe.ui.form.on('Class Details', {
 });
 
 function trainerStatus(frm) {
-    if ( frm.doc.trainer && frm.doc.trainer.active == 'Active') {
+    if (frm.doc.trainer && frm.doc.trainer.active === 1) {  // Assuming active is represented as 1 in the checkbox
         frm.set_query('trainer', function() {
             return {
                 filters: [
-                    ['Gym Trainer', 'name', '=', frm.doc.trainer]
+                    ['Gym Trainer', 'active', '=', 1]
                 ]
             };
         });
@@ -21,7 +21,7 @@ function trainerStatus(frm) {
         frm.set_query('trainer', function() {
             return {
                 filters: [
-                    ['Gym Trainer', 'name', '=', '']
+                    ['Gym Trainer', 'active', '=', 1]  // Filter out active trainers
                 ]
             };
         });
