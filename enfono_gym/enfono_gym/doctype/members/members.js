@@ -24,7 +24,7 @@ frappe.ui.form.on("Members", {
         });
 
         frm.add_custom_button(__('Trainer Subscription Plan'), function () {
-                    frappe.new_doc("Trainer Subsription Plan", { member:frm.doc.last_name })
+                    frappe.new_doc("Trainer Subsription Plan", { member:frm.doc.name })
                    
             
 
